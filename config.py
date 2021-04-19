@@ -1,0 +1,42 @@
+import os
+import pygame
+
+pygame.init()
+
+RESOLUCAO = (550, 600)
+BRANCO = (255, 255, 255)
+PRETO = (0, 0, 0)
+FPS = 35
+QUANTIDADE_INIMIGO = 2
+os.environ['SDL_VIDEO_CENTERED'] = '1' # CENTRALIZA A TELA DO JOGO
+SELECIONA = os.path.join("img", "seleciona.png")
+SELECIONADO5 = ("img", "selecionado5.png")
+SUBTELA = os.path.join("img","subtela.png")
+IMAGEM_BACKGROUND = os.path.join("img", "background.png")
+IMAGEM_BACKGROUND2 = os.path.join("img", "background2.png")
+SELECIONADO_JOGAR2 = os.path.join("img", "selecionado4.png")
+IMAGEM_INICIAL = os.path.join("img", "tela_inicial.png")
+IMAGEM_MENU = os.path.join("img", "menu.png")
+IMAGEM_CARRO = os.path.join("img", "carro.png")
+IMAGEM_CARRO_INIMIGO = os.path.join("img", "carro_inimigo.png")
+IMAGEM_BURACO = os.path.join("img","buraco.png")
+SELECIONADO_JOGAR = os.path.join("img", "selecionado1.png")
+SELECIONADO_CONTROLES = os.path.join("img", "selecionado2.png")
+SELECIONADO_CREDITOS = os.path.join("img", "selecionado3.png")
+CREDIT = os.path.join("img", "creditos.png")
+CONTROLS = os.path.join("img","controles.png")
+NIVEL2 = ("img", "nivel2.png")
+FIM = os.path.join("img", "game_over.png")
+TROFEU = os.path.join("img","trofeu.png")
+CAMINHO_DA_FONTE_PIXEL = os.path.join("font", "Computer.ttf")
+CAMINHO_DA_FONTE_DG = os.path.join("font", "DS-DIGI.TTF")
+INTRO = os.path.join("music", "intro.mp3")
+CAMINHO_DA_MUSICA = os.path.join("music", "musica.mp3")
+CAMINHO_DA_MUSICA_GAMEOVER = os.path.join("music", "game_over.wav")
+CAMINHO_DA_MUSICA_SELECIONAR = os.path.join("music", "retorno.wav")
+CAMINHO_DA_MUSICA_RETORNO = os.path.join("music", "selecionar.wav")
+ARQUIVO_SALVA_SCORE = os.path.join("data", "score.dat")
+ARQUIVO_TEMPO = os.path.join("data", "tempo.dat")
+FONTE_PIXEL = pygame.font.Font(CAMINHO_DA_FONTE_PIXEL, 20)
+FONTE_PIXEL2 = pygame.font.Font(CAMINHO_DA_FONTE_PIXEL, 30)
+FONTE_DG = pygame.font.Font(CAMINHO_DA_FONTE_DG, 30)
