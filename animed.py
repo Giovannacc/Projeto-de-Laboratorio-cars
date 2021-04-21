@@ -10,12 +10,7 @@ from function import *
 
 
 def tempo_animed(tempo):
-    temp = open(ARQUIVO_TEMPO, "r").read()
-
-    if int(tempo) > int(temp):
-        texto = open(ARQUIVO_TEMPO, "w")
-        texto.write(str(tempo))
-
+    temp = open(ARQUIVO_TEMPO, "r").read()   
 
 def animed_over(screen,tempo):
     inter = interface.interface(screen)
@@ -69,7 +64,6 @@ def obj(screen):
             tempo += 1
 
         if tempo == 100:
-            tempo_animed(tempo)
             animed_over(screen, tempo)
 
         carro.render()
