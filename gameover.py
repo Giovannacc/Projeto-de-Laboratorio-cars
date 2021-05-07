@@ -18,9 +18,8 @@ def game_over(screen, score):
     while not False:
         for event in pygame.event.get():
             if event.type == pygame.QUIT: 
-                pygame.quit()
-                sys.exit()
-        
+               fechar_janela()
+
         screen.blit(game_over, (0, 0))
         if score >= int(ultimo_recorde):
             imprime_texto(screen, "NOVO  RECORDE", (197, 210), FONTE_PIXEL, BRANCO)
