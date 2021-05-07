@@ -30,8 +30,7 @@ class interface:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    fechar_janela()
 
             self.posicao_mouse = pygame.mouse.get_pos()
             screen.blit(imagem, (0, 0))
@@ -45,8 +44,7 @@ class interface:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    fechar_janela()
 
                 self.posicao_mouse = pygame.mouse.get_pos()
                 if not rect.collidepoint((self.posicao_mouse)): return
@@ -62,8 +60,7 @@ class interface:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    fechar_janela()
 
             screen.blit(imagem_inicial, (0, 0))
             pygame.display.flip()
@@ -86,8 +83,7 @@ class interface:
         while True:
             for event in pygame.event.get():
                 if event.type == pygame.QUIT:
-                    pygame.quit()
-                    sys.exit()
+                    fechar_janela()
 
             screen.blit(imagem_menu_inicial, (0, 0))
             pygame.display.flip()
