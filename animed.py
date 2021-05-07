@@ -9,21 +9,14 @@ import interface
 from function import *
 
 
-def tempo_animed(tempo):
-    temp = open(ARQUIVO_TEMPO, "r").read()   
-
-def animed_over(screen,tempo):
+def animed_over(screen):
     inter = interface.interface(screen)
     ani_over = pygame.image.load("img/comando.png")
-
-
 
     while not False:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
-
+                fechar_janela()
         screen.blit(ani_over, (0, 0))
 
         pressed = pygame.key.get_pressed()
@@ -64,7 +57,7 @@ def obj(screen):
             tempo += 1
 
         if tempo == 100:
-            animed_over(screen, tempo)
+            animed_over(screen)
 
         carro.render()
         carro.mover_carro(tecla)
