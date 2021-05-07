@@ -28,16 +28,16 @@ def test_salvar_score2():
 def test_efeitos_sonoros():
     tipo = "Game_Over"
     game_over = pygame.mixer.Sound(CAMINHO_DA_MUSICA_GAMEOVER)
-    assert game_over.play(tipo)
+    assert game_over.play()
 
 
 def test_efeitos_sonoros1():
     tipo = "Retorno"
     retorno = pygame.mixer.Sound(CAMINHO_DA_MUSICA_RETORNO)
-    assert retorno.play(tipo)
+    assert retorno.play()
 
 
 def test_efeitos_sonoros2():
     tipo = "Click"
     click = pygame.mixer.Sound(CAMINHO_DA_MUSICA_SELECIONAR)
-    assert click.play(tipo)
+    assert click.play()
