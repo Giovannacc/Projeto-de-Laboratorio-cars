@@ -35,8 +35,7 @@ def main2(screen):
     while not False:
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                pygame.quit()
-                sys.exit()
+                fechar_janela()
 
         tecla = pygame.key.get_pressed()
 
