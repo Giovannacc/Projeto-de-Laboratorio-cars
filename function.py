@@ -66,3 +66,7 @@ def intro(situ):
         pygame.mixer.music.play(1)
     else:
         pygame.mixer.music.stop()
+       
+def fechar_janela():
+    pygame.quit()
+    sys.exit()
